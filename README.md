@@ -55,6 +55,8 @@ Once you navigate to a specific multibranch pipeline job, you see the individual
 
 ![image](https://cloud.githubusercontent.com/assets/365744/22827681/6372e2a8-ef99-11e6-95db-4155a650e460.png)
 
+Once a build is started, it will look for a `Jenkinsfile` and run the build pipeline that is defined therein (see [jenkins-pipes-helloworld](https://github.com/tknerr/jenkins-pipes-helloworld)).
+
 
 ## Where to go from here?
 
