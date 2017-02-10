@@ -4,16 +4,13 @@
 Repo containing the job definitions for the [Jenkins Pipes](https://github.com/tknerr/jenkins-pipes-infra) demo:
 
  * it uses [Job-DSL](https://github.com/jenkinsci/job-dsl-plugin/wiki) to describe **WHAT** (i.e. which repos) to build
- * the **HOW** to build is defined in each of the [referenced repo's](https://github.com/tknerr/jenkins-pipes-helloworld) `Jenkinsfile`s
-
+ * the **HOW** to build is defined in each of the referenced repo's `Jenkinsfile`s
 
 ## How it works
 
 There is a [seed-job](https://github.com/tknerr/jenkins-pipes-infra/blob/master/seedJob.xml) which runs every minute and applies the job-dsl scripts in all the `*.groovy` files within this repository.
 
-The [`ci_jobs.groovy`](https://github.com/tknerr/jenkins-pipes-jobs/blob/master/ci_jobs.groovy) sets up the CI build jobs for our demo project.
-
-Currently there is only a single repo, but the list could easily be extended:
+The [`ci_jobs.groovy`](https://github.com/tknerr/jenkins-pipes-jobs/blob/master/ci_jobs.groovy) sets up the CI build jobs for our demo project. Currently there is only a single repo, but the list could easily be extended:
 
 ```groovy
 // define the repos we want to build on CI
